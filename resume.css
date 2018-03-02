@@ -390,6 +390,24 @@ section.skills .progressBar > .progress{
     transition: all 1s;
 
 }
+section.skills >ol>li:nth-child(1) .progressBar > .progress {
+    width: 90%;
+}
+
+section.skills >ol>li:nth-child(3) .progressBar > .progress{
+    width: 70%;
+}
+section.skills >ol>li:nth-child(4) .progressBar > .progress{
+    width: 60%;
+}
+
+section.skills >ol>li:nth-child(5) .progressBar > .progress{
+    width: 60%;
+}
+
+section.skills >ol>li:nth-child(6) .progressBar > .progress{
+    width: 40%;
+}
 section.skills.offset .progress{
     transform: translateX(-100%);
 }
@@ -398,6 +416,7 @@ section.portfolio {
     text-align: center;
     margin-bottom: 100px;
     max-width: 720px;
+
 }
 
 section.portfolio>h2{
@@ -407,6 +426,8 @@ section.portfolio >.swiper-container {
     width: 668px;
     height: 501px;
 }
+
+
 .swiper-button-prev,.swiper-button-next{
     background-color: white;
     border-radius: 50%;
@@ -430,13 +451,29 @@ section.message >ol{
 
 section.message >ol>li{
     padding:16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;;
+    word-break: break-all;
+    position: relative;
 }
+section.message >ol>li>span{
+    display: block;
+    position: absolute;
+    color:gray;
+    font-size: 12px;
+    bottom: 0px;
+    right:8px;
+
+}
+
+section.message #messageList{
+    margin-top:32px;
+}
+
 
 #message-submit{
     background: #FFF;
     border: 1px solid #CCC;
-    padding: 10px 25px 10px 25px;
+    padding: 7px 25px 6px 25px;
     color: #333;
     border-radius: 4px;
 }
@@ -456,7 +493,7 @@ section.message >ol>li{
     margin-top: 2px;
     outline: 0 none;
     padding: 5px 0px 5px 5px;
-    width: 30%;
+    width: 35%;
     border-radius: 4px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 

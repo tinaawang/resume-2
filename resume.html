@@ -25,20 +25,20 @@
                 <li><a href="#siteSkill">技能</a></li>
                 <li ><a  href="#siteWorks">作品</a>
                     <ul class="submenu">
-                        <li>作品一</li>
-                        <li>作品二</li>
-                        <li>作品三</li>
+                        <li><a href="https://github.com/tinaawang/music"  target=＂_blank＂>作品一</a></li>
+                        <li><a href="https://github.com/tinaawang/canvas"  target=＂_blank＂>作品二</a></li>
+                        <li><a href="https://github.com/tinaawang/vue-resume-1"  target=＂_blank＂>作品三</a></li>
                     </ul>
                 </li>
 
                 <li ><a   href="#siteBlog">博客</a>
                     <ul class="submenu">
-                        <li>博客一</li>
-                        <li>博客二</li>
-                        <li>博客三</li>
+                        <li><a href="https://www.jianshu.com/p/c6c221f825db"  target=＂_blank＂>博客一</a></li>
+                        <li><a href="https://www.jianshu.com/p/667c6fc4f890"  target=＂_blank＂>博客二</a></li>
+                        <li><a href="https://www.jianshu.com/p/ac674a00b34b"  target=＂_blank＂>博客三</a></li>
                     </ul>
                 </li>
-                <li><a href="#">日历</a></li>
+                <li><a href="#siteMessage">留言板</a></li>
                 <li><a href="#">联系方式</a></li>
                 <li><a href="#">其他</a></li>
 
@@ -72,9 +72,9 @@
                     <dt>所在城市</dt>
                     <dd>上海</dd>
                     <dt>邮箱</dt>
-                    <dd>17321256666@163.com</dd>
+                    <dd>17321256848@163.com</dd>
                     <dt>手机</dt>
-                    <dd>17321256666</dd>
+                    <dd>17321256848</dd>
                     <dt>毕业院校</dt>
                     <dd>南昌大学</dd>
                     <dt>本科专业</dt>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <footer class="media">
-            <a href="https://www.jianshu.com/" target="_blank"><svg class="icon" aria-hidden="true">
+            <a href="https://www.jianshu.com/u/51b10c899397" target="_blank"><svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-jianshu"></use>
             </svg></a>
             <a href="https://weibo.com/" target="_blank"><svg class="icon" aria-hidden="true">
@@ -105,10 +105,10 @@
 
     </div>
     <p class="downLoadResume-wrapper">
-        <a href="./downLoad.txt" class="downLoadResume" download>下载简历</a>
+        <a href="./downLoad.pdf" class="downLoadResume" download>下载简历</a>
     </p>
 
-    <p  class="selfIntroduction">王洁 前端开发工程师  目前工作地点在上海</p>
+    <pre  class="selfIntroduction">王洁 前端开发工程师  目前工作地点在上海</pre>
 
 
 </main>
@@ -134,19 +134,19 @@
             </div>
         </li>
         <li>
-        <h3>vue</h3>
-            <div class="progressBar">
-                <div class="progress"></div>
-            </div>
-        </li>
-        <li>
-            <h3>React</h3>
+        <h3>Vue</h3>
             <div class="progressBar">
                 <div class="progress"></div>
             </div>
         </li>
         <li>
             <h3>http</h3>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Node.js</h3>
             <div class="progressBar">
                 <div class="progress"></div>
             </div>
@@ -170,7 +170,7 @@
                 <!-- Slides -->
                 <img class="swiper-slide" src="./img/canvas-page.jpg">
                 <img class="swiper-slide" src="./img/nav-page.jpg">
-                <img class="swiper-slide" src="./img/cycle-page.jpg">
+                <img class="swiper-slide" src="./img/music.jpg">
 
             </div><!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -182,14 +182,14 @@
     </div>
 
 </section>
-<section class="message">
+<section data-x  id="siteMessage" class="message">
     <h2>留言板</h2>
     <ol id="messageList"></ol>
     <form id="postMessageForm" style="width: 700px; margin:50px auto">
         <lable>姓名</lable>
-        <input type="text" name="name" class="message-input">
+        <input type="text" name="name" class="message-input" maxlength="6">
         <lable>内容</lable>
-        <input type="text" name="content" class="message-input">
+        <input type="text" name="content" class="message-input" maxlength="100">
         <input type="submit" value="提交" id="message-submit">
     </form>
 </section>
